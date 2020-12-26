@@ -1,0 +1,5 @@
+tipo,subTipo,codigo,titulo,genero,locado,...
+musica,lp,321,Arthur Verocai,MPB,false,Arthur Verocai,10,true
+musica,lp,123,Clube Da Esquina,MPB,false,Milton Nascimento & Lô borges,21,false
+musica,cd,132,IGOR,Rap,False,Tyler. O Criador,12,false,false
+filme,dvd,231,Parasite,suspense,false,2019,240,false
