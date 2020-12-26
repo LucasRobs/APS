@@ -1,0 +1,1 @@
+# Repositório da Disciplina de Análise de Projeto de Sistemas 2020.2.
