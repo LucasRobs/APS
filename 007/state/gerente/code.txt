@@ -1,0 +1,9 @@
+@startuml
+[*]-->Cadastrado
+NãoCadastrado -left-> Cadastrado : Cadastrar Gerente
+Cadastrado -right-> NãoCadastrado : Caso não esteja
+Cadastrado --> Logado
+Logado-left->NãoLogado : Logout
+NãoLogado-left->Logado : Login
+NãoLogado-->[*]
+@enduml

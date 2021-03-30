@@ -1,0 +1,19 @@
+@startuml
+[]--Cadastrado
+NãoCadastrado -left- Cadastrado  Cadastrar DVD
+Cadastrado -right- NãoCadastrado  Caso não esteja
+
+Cadastrado -- EmEstoque
+EmEstoque -left- EmFalta  Todos Locados
+EmFalta -right- EmEstoque  Devolvido
+
+EmEstoque -- Locado
+Locado -left- NãoLocado  Remover Locação
+NãoLocado -left- Locado  Fazer Locação
+
+
+Locado -- Prestando
+Prestando -left- Aranhado  Arranha
+Aranhado -right- Prestando  Limpa
+Prestando--[]
+@enduml

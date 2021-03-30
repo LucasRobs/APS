@@ -1,0 +1,28 @@
+@startuml
+abstract class Pessoa{
+
+ String nome;
+ String matricula;
+
+}
+
+class Cliente extends Pessoa{
+
+ String endereco;
+ int idade;
+ char sexo;
+
+}
+
+object cliente01{
+
+ nome = "Lucas"
+ matricula = "1"
+ endereco = "R. casinbão"
+ idade = 13
+ sexo = m
+
+}
+
+cliente01 .up.> Cliente : <<instancia>>
+@enduml

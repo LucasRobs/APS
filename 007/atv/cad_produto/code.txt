@@ -1,0 +1,8 @@
+@startuml
+Gerente
+start
+Cadastrar os produtos;
+Sistema
+Pesiste as informações;
+stop
+@enduml

@@ -1,0 +1,9 @@
+@startuml
+[*]-->Cadastrado
+NãoCadastrado -left-> Cadastrado : Cadastrar Cliente
+Cadastrado -right-> NãoCadastrado : Caso não esteja
+ComProdutoAtrasado--> Devendo
+Devendo-left->Quitado : Pagar
+Quitado-left->Devendo : Comprar Produto
+Quitado-->[*]
+@enduml

@@ -1,0 +1,39 @@
+@startuml
+abstract class Produto{
+
+ String codigo;
+ String titulo;
+ String genero;
+ Float valDiaria;
+ Boolean locado;
+
+}
+
+class Musica extends Produto{
+
+ String autor;
+ int numFaixas;
+
+}
+
+class CD extends Musica{
+ boolean duplo;
+ boolean arranhado;
+}
+
+object CD01{
+
+ codigo = "024"
+ genero = "Musica Brasileira Internacional - MBI"
+ titulo = "Transa"
+ autor = Caetano Veloso
+ valDiaria = 0,50
+ numFaixas = 7
+ duplo = false
+ arranhado = true
+ locado = false
+
+}
+
+CD01 .up.> CD : <<instancia>>
+@enduml

@@ -1,0 +1,14 @@
+@startuml
+|Cliente|
+start
+:Pedir informação sobre 
+determinado produto;
+|Gerente|
+:Pesquisar as informações
+no Sistema;
+|Sistema|
+:Fornecer as informações;
+|Gerente|
+:Informar sobre o produto;
+stop
+@enduml

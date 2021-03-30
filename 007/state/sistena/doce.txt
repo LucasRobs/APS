@@ -1,0 +1,8 @@
+@startuml
+[*]-->Inicialização 
+Inicialização --> Trabalhando 
+Trabalhando -left-> Executando : recebe dados
+Executando -right-> Trabalhando : Pesiste informações
+Trabalhando --> Finalização : Encerrar Aplicação
+Finalização-->[*]
+@enduml

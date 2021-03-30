@@ -1,0 +1,40 @@
+@startuml
+abstract class Pessoa{
+ String nome;
+ String matricula;
+}
+
+class Funcionario extends Pessoa{
+ String login;
+ String senha;
+}
+
+class OperadordoSistema extends Funcionario{
+
+}
+
+class Gerente extends Funcionario{
+
+}
+
+object operador01{
+
+ nome = "Marcelo"
+ matricula = "001"
+ login = "marcelo"
+ senha = "qwe"
+
+}
+
+object operador02{
+
+ nome = "Di"
+ matricula = "001"
+ login = "Di"
+ senha = "123"
+
+}
+
+operador01 .up.> OperadordoSistema : <<instancia>>
+operador02 .up.> Gerente : <<instancia>>
+@enduml

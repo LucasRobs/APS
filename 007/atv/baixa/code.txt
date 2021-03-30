@@ -1,0 +1,19 @@
+@startuml
+|Cliente|
+start
+:Entregar locação;
+|Operador|
+:Verificar no Sistema 
+sobre a locação;
+|Sistema|
+:retorna preço;
+|Operador|
+:Informar preço e multa;
+|Cliente|
+:Pagar o valor;
+|Operador|
+:Dar baixa na locação;
+|Sistema|
+:pesiste os dados;
+stop
+@enduml

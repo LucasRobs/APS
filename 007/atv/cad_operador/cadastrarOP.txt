@@ -1,0 +1,8 @@
+@startuml
+Gerente
+start
+Cadastrar Operador;
+Sistema
+Pesiste as informações;
+stop
+@enduml

@@ -1,0 +1,39 @@
+@startuml
+abstract class Produto{
+
+ String codigo;
+ String titulo;
+ String genero;
+ Float valDiaria;
+ Boolean locado;
+
+}
+
+class Musica extends Produto{
+
+ String autor;
+ int numFaixas;
+
+}
+
+class LP extends Musica{
+ boolean duplo;
+ boolean arranhado;
+}
+
+object LP01{
+
+ codigo = "00001"
+ titulo = "Arthur Verocai"
+ genero = "MPB Psicodelico"
+ valDiaria = 1500,00
+ locado = false
+ autor = Arthur Verocai
+ numFaixas = 10
+ duplo = true
+ arranhado = false
+ 
+}
+
+LP01 .up.> LP : <<instancia>>
+@enduml

@@ -1,0 +1,22 @@
+@startuml
+|Cliente|
+start
+:Alugar;
+|Operador|
+:Verificar no Sistema 
+sobre a locação;
+|Sistema|
+:Fornecer infromações 
+da locação;
+|Operador|
+:Retorna o preço;
+|Cliente|
+:Pagar;
+|Operador|
+:Requisita o produto;
+|Sistema|
+:Reserva o produto;
+|Operador|
+:Entrega o produto;
+stop
+@enduml

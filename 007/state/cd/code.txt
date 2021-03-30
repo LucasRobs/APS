@@ -1,0 +1,14 @@
+@startuml
+[*]-->Cadastrado
+NãoCadastrado -right-> Cadastrado : Cadastrar CD
+Cadastrado -left-> NãoCadastrado : else
+
+EmEstoque --> Locado
+Locado -left-> NãoLocado : Remover Locação
+NãoLocado -left-> Locado : Fazer Locação
+Locado-->[*]
+
+Cadastrado --> EmEstoque
+EmEstoque -left-> EmFalta : Todos Locados
+EmFalta -right-> EmEstoque : Devolvido
+@enduml

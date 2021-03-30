@@ -1,0 +1,47 @@
+@startuml
+abstract class Produto{
+
+ String codigo;
+ String titulo;
+ String genero;
+ Float valDiaria;
+ Boolean locado;
+
+}
+
+class Filmes extends Produto{
+
+ int anoLancamento;
+ int duracao;
+
+}
+
+class DVD extends Filmes{
+    boolean arranhado;
+}
+
+object DVD1{
+ codigo = "123"
+ titulo = "The goodfellas"
+ genero = "Crime/Drama"
+ valDiaria = 50,00
+ locado = false
+ anoLancamento = 1990
+ duracao = 999
+ arranhado = false
+}
+
+object DVD2{
+ codigo = "123"
+ titulo = "The Godfather Part II"
+ genero = "Crime/Drama"
+ valDiaria = 50,00
+ locado = false
+ anoLancamento = 1990
+ duracao = 999
+ arranhado = false
+}
+
+DVD1 .up.> DVD : <<instancia>>
+DVD2 .up.> DVD : <<instancia>>
+@enduml
